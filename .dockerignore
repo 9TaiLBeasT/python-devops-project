@@ -1,0 +1,38 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.env
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Documentation
+README.md
+
+# Test files
+test_app.py
+
+# Local development
+Dockerfile
+.dockerignore
+
+# OS files
+.DS_Store
+Thumbs.db
