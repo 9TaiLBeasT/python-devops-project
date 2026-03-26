@@ -1,9 +1,12 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 import logging
 import os
+import requests
 from datetime import datetime
 
 app = Flask(__name__)
+CORS(app) # Enable CORS for all routes
 
 # Environment configuration
 app.config['ENV'] = os.getenv('FLASK_ENV', 'production')
@@ -46,10 +49,41 @@ def metrics():
     logger.debug("Metrics endpoint accessed")
     return jsonify({
         "status": "ok",
-        "uptime": "todo",  # You can add uptime tracking here
-        "memory_usage": "todo",  # Add memory usage monitoring
-        "request_count": "todo"  # Add request counting
+        "uptime": "todo",
+        "memory_usage": "todo",
+        "request_count": "todo"
     })
+
+@app.route("/api/deploy", methods=["POST"])
+def deploy():
+    """Trigger the real GitHub Actions CI/CD Pipeline via GitHub REST API."""
+    token = os.getenv("GITHUB_TOKEN")
+    owner = os.getenv("GITHUB_OWNER")
+    repo = os.getenv("GITHUB_REPO")
+    
+    if not token or not owner or not repo:
+        error_msg = "Missing GitHub configuration in environment variables."
+        logger.error(error_msg)
+        return jsonify({"error": error_msg}), 400
+        
+    url = f"https://api.github.com/repos/{owner}/{repo}/actions/workflows/python-ci.yml/dispatches"
+    headers = {
+        "Accept": "application/vnd.github.v3+json",
+        "Authorization": f"Bearer {token}"
+    }
+    data = {"ref": "main"}
+    
+    try:
+        response = requests.post(url, headers=headers, json=data)
+        if response.status_code == 204:
+            logger.info("Successfully triggered GitHub Actions deployment pipeline.")
+            return jsonify({"status": "success", "message": "Pipeline triggered."}), 200
+        else:
+            logger.error(f"GitHub API Error: {response.text}")
+            return jsonify({"error": "Failed to trigger pipeline via GitHub API.", "details": response.text}), response.status_code
+    except Exception as e:
+        logger.error(f"Error communicating with GitHub: {str(e)}")
+        return jsonify({"error": str(e)}), 500
 
 @app.errorhandler(404)
 def not_found(error):
