@@ -29,8 +29,8 @@ def test_metrics():
     
     data = json.loads(response.data)
     assert data["status"] == "ok"
-    assert "uptime" in data
-    assert "memory_usage" in data
+    assert "uptime_seconds" in data
+    assert "avg_latency_ms" in data
     assert "request_count" in data
 
 def test_404_error():
