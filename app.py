@@ -3,7 +3,10 @@ from flask_cors import CORS
 import logging
 import os
 import requests
+from dotenv import load_dotenv
 from datetime import datetime
+
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app) # Enable CORS for all routes
