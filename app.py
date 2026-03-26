@@ -4,6 +4,7 @@ import logging
 import os
 import time
 from collections import deque
+import psutil
 import requests
 from dotenv import load_dotenv
 from datetime import datetime
@@ -23,6 +24,8 @@ def before_request():
     g.start_time = time.time()
     global total_requests
     total_requests += 1
+    logger.info(f"Incoming {request.method} request to {request.path}")
+
 
 @app.after_request
 def after_request(response):
@@ -78,8 +81,21 @@ def metrics():
         "status": "ok",
         "uptime_seconds": uptime_seconds,
         "avg_latency_ms": round(avg_latency, 2),
-        "request_count": total_requests
+        "request_count": total_requests,
+        "cpu_percent": psutil.cpu_percent(interval=None),
+        "ram_percent": psutil.virtual_memory().percent
     })
+
+@app.route("/logs")
+def get_logs():
+    try:
+        with open("app.log", "r") as f:
+            lines = f.readlines()
+            # Return the last 50 lines safely
+            return jsonify({"logs": [line.strip() for line in lines[-50:]]})
+    except Exception as e:
+        logger.error(f"Error reading logs: {str(e)}")
+        return jsonify({"error": str(e)}), 500
 
 @app.route("/deploy", methods=["POST"])
 def deploy():

@@ -1889,3 +1889,167 @@
 2026-03-26 19:59:58,680 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:59:58] "GET /metrics HTTP/1.1" 200 -
 2026-03-26 20:00:58,680 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:00:58] "GET /health HTTP/1.1" 200 -
 2026-03-26 20:00:58,681 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:00:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:01:58,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:01:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:01:58,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:01:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:02:58,682 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:02:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:02:58,684 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:02:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:03:58,682 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:03:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:03:58,684 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:03:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:04:58,694 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:04:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:04:58,695 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:04:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:05:58,687 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:05:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:05:58,688 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:05:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:06:58,682 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:06:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:06:58,684 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:06:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:07:58,677 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:07:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:07:58,679 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:07:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:08:58,666 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:08:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:08:58,667 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:08:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:09:58,691 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:09:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:09:58,692 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:09:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:10:58,694 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:10:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:10:58,696 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:10:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:11:58,685 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:11:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:11:58,687 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:11:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:12:58,682 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:12:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:12:58,683 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:12:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:13:58,684 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:13:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:13:58,686 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:13:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:14:58,672 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:14:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:14:58,673 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:14:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:15:58,690 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:15:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:15:58,692 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:15:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:16:23,185 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:16:23] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:16:23,186 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:16:23] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:16:23,446 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:16:23] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:16:23,447 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:16:23] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:16:26,442 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:16:26] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:16:26,443 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:16:26] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:06,373 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:06] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:06,374 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:06] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:06,375 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:06,375 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:06] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:06,381 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:06] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:06,383 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:06] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:06,385 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:06,385 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:06] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:09,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:09] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:09,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:09] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:09,664 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:09,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:09] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:12,667 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:12] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:12,670 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:12] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:12,686 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:12,687 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:12] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:15,655 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:15] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:15,666 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:15] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:15,675 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:15,676 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:15] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:18,674 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:18] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:18,678 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:18] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:18,686 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:18,687 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:18] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:21,650 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:21] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:21,652 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:21] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:21,666 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:21,666 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:21] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:24,658 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:24] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:24,662 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:24,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:24] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:24,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:24] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:27,671 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:27] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:27,674 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:27] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:27,675 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:27,675 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:27] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:30,661 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:30] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:30,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:30] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:30,663 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:30,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:30] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:33,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:33] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:33,670 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:33] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:33,672 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:33,673 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:33] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:36,659 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:36] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:36,661 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:36] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:36,666 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:36,668 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:36] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:39,658 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:39] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:39,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:39] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:39,675 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:39,677 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:39] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:42,655 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:42] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:42,660 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:42,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:42] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:42,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:42] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:45,668 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:45] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:45,677 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:45] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:45,687 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:45,688 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:45] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:48,656 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:48] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:48,659 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:48] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:48,662 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:48,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:48] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:51,660 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:51] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:51,660 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:51] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:51,662 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:51,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:51] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:54,656 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:54] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:54,659 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:54] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:54,671 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:54,672 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:54] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:18:57,652 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:57] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:18:57,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:57] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:18:57,657 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:18:57,660 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:18:57] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:19:00,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:19:00] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:19:00,669 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:19:00] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:19:00,670 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:19:00,672 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:19:00] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:19:03,649 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:19:03] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:19:03,652 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:19:03] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:19:03,655 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:19:03,656 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:19:03] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:19:58,681 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:19:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:19:58,682 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:19:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:19:58,682 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:19:58,683 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:19:58] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:20:27,702 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:27] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:20:27,707 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:27] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:20:27,707 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:20:27,709 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:27] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:20:31,670 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:31] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:20:31,679 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:31] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:20:31,683 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:20:31,685 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:31] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:20:34,661 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:34] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:20:34,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:34] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:20:34,665 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:20:34,666 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:34] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:20:37,646 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:37] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:20:37,646 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:37] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:20:37,647 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:20:37,648 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:37] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:20:40,669 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:40] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:20:40,673 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:40] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:20:40,682 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:20:40,684 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:40] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:20:43,658 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:43] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:20:43,668 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:43] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:20:43,672 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:20:43,673 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:43] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:20:58,667 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:20:58,673 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:20:58,689 - __main__ - WARNING - 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-26 20:20:58,690 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:20:58] "[33mGET /logs HTTP/1.1[0m" 404 -
+2026-03-26 20:21:24,369 - __main__ - INFO - Starting Flask app in production mode
+2026-03-26 20:21:24,385 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.102:5000
+2026-03-26 20:21:24,385 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 20:21:58,690 - __main__ - INFO - Incoming GET request to /health
+2026-03-26 20:21:58,692 - __main__ - INFO - Incoming GET request to /metrics
+2026-03-26 20:21:58,695 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:21:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 20:21:58,695 - __main__ - INFO - Incoming GET request to /logs
+2026-03-26 20:21:58,700 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:21:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 20:21:58,701 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 20:21:58] "GET /logs HTTP/1.1" 200 -

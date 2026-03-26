@@ -25,7 +25,7 @@ export const Dashboard = () => {
   const [metrics, setMetrics] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [history, setHistory] = useState<any[]>([]);
-  const [logs, setLogs] = useState<LogEntry[]>([]);
+  const [serverLogs, setServerLogs] = useState<string[]>([]);
   
   // Pipeline State
   const [pipelineStage, setPipelineStage] = useState<number>(4); // 4 = Completed
@@ -63,13 +63,10 @@ export const Dashboard = () => {
     }
   };
 
-  const addLog = (method: string, path: string, status: number, ms: number) => {
-    const newLog: LogEntry = {
-      id: logIdCounter.current++,
-      time: new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute:'2-digit', second:'2-digit' }),
-      method, path, status, ms
-    };
-    setLogs(prev => [newLog, ...prev].slice(0, 50));
+  const addLog = (method: string, path: string, status: number, ms: number = 0) => {
+    const time = new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute:'2-digit', second:'2-digit' });
+    const logStr = `[${time}] ${method.padEnd(4)} ${path} -> ${status} (${ms}ms)`;
+    setServerLogs(prev => [logStr, ...prev].slice(0, 50));
   };
 
   const fetchData = async (isManual = false) => {
@@ -77,9 +74,10 @@ export const Dashboard = () => {
       if (isManual) setLoading(true);
       const start = performance.now();
       
-      const [hRes, mRes] = await Promise.all([
+      const [hRes, mRes, lRes] = await Promise.all([
         axios.get('/api/health'),
-        axios.get('/api/metrics')
+        axios.get('/api/metrics'),
+        axios.get('/api/logs')
       ]);
       
       const end = performance.now();
@@ -87,23 +85,21 @@ export const Dashboard = () => {
       
       setHealth(hRes.data);
       setMetrics(mRes.data);
-      
-      if (isManual) {
-         addLog('GET', '/api/health', hRes.status, latency);
-         addLog('GET', '/api/metrics', mRes.status, latency);
+      if (lRes.data?.logs) {
+         setServerLogs(lRes.data.logs);
       }
       
       const newPoint = {
         time: new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute:'2-digit', second:'2-digit' }),
-        uptime: Math.floor(Math.random() * 5) + 95,
-        requests: Math.floor(Math.random() * 50) + 10,
+        cpu: mRes.data.cpu_percent || 0,
+        ram: mRes.data.ram_percent || 0,
         latency: latency
       };
       
       setHistory(prev => {
         const updated = [...prev, newPoint].slice(-15);
         if (updated.length === 1) {
-          return [{...newPoint, time: 'Init', requests: 0}, newPoint];
+          return [{...newPoint, time: 'Init', cpu: 0, ram: 0}, newPoint];
         }
         return updated;
       });
@@ -131,8 +127,8 @@ export const Dashboard = () => {
     addLog('POST', '/api/workload/compute', 202, 345);
     const spikePoint = {
       time: new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute:'2-digit', second:'2-digit' }),
-      uptime: Math.floor(Math.random() * 10) + 85,
-      requests: Math.floor(Math.random() * 200) + 150,
+      cpu: 100,
+      ram: 90,
       latency: Math.floor(Math.random() * 50) + 100
     };
     setHistory(prev => [...prev.slice(-14), spikePoint]);
@@ -142,18 +138,8 @@ export const Dashboard = () => {
     fetchData(true);
     const interval = setInterval(() => fetchData(false), 3000);
     
-    // Simulate background traffic
-    const logInterval = setInterval(() => {
-        const methods = ['GET', 'POST', 'PUT'];
-        const paths = ['/api/users', '/api/auth/verify', '/api/data/sync', '/api/health'];
-        const method = methods[Math.floor(Math.random() * methods.length)];
-        const path = paths[Math.floor(Math.random() * paths.length)];
-        addLog(method, path, 200, Math.floor(Math.random() * 40) + 5);
-    }, 2000);
-    
     return () => {
         clearInterval(interval);
-        clearInterval(logInterval);
     };
   }, []);
 
@@ -271,12 +257,12 @@ export const Dashboard = () => {
         >
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-xl font-bold flex items-center gap-3">
-              <div className="p-2 bg-blue-500/10 rounded-lg"><Activity size={20} className="text-blue-400" /></div>
-              Network Traffic & Request Volume
+              <div className="p-2 bg-blue-500/10 rounded-lg"><Cpu size={20} className="text-blue-400" /></div>
+              Host Machine Hardware Load (Local)
             </h3>
             <div className="flex gap-4 text-sm font-medium">
-              <span className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-blue-500" /> Requests/s</span>
-              <span className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-emerald-500" /> Uptime Score</span>
+              <span className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-blue-500" /> CPU Usage %</span>
+              <span className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-purple-500" /> RAM Usage %</span>
             </div>
           </div>
           
@@ -284,24 +270,24 @@ export const Dashboard = () => {
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart data={history} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                 <defs>
-                  <linearGradient id="colorReq" x1="0" y1="0" x2="0" y2="1">
+                  <linearGradient id="colorCpu" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3}/>
                     <stop offset="95%" stopColor="#3b82f6" stopOpacity={0}/>
                   </linearGradient>
-                  <linearGradient id="colorUp" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#10b981" stopOpacity={0.3}/>
-                    <stop offset="95%" stopColor="#10b981" stopOpacity={0}/>
+                  <linearGradient id="colorRam" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#a855f7" stopOpacity={0.3}/>
+                    <stop offset="95%" stopColor="#a855f7" stopOpacity={0}/>
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" vertical={false} />
                 <XAxis dataKey="time" stroke="#64748b" tick={{fill: '#64748b', fontSize: 12}} tickLine={false} axisLine={false} dy={10} />
-                <YAxis stroke="#64748b" tick={{fill: '#64748b', fontSize: 12}} tickLine={false} axisLine={false} />
+                <YAxis stroke="#64748b" tick={{fill: '#64748b', fontSize: 12}} tickLine={false} axisLine={false} domain={[0, 100]} />
                 <Tooltip 
                   contentStyle={{ backgroundColor: '#0f172aa0', border: '1px solid #1e293b', borderRadius: '12px', backdropFilter: 'blur(8px)', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.5)' }}
                   itemStyle={{color: '#e2e8f0', fontWeight: 'bold'}}
                 />
-                <Area type="monotone" dataKey="requests" stroke="#3b82f6" strokeWidth={3} fillOpacity={1} fill="url(#colorReq)" activeDot={{r: 6, strokeWidth: 0}} />
-                <Area type="monotone" dataKey="uptime" stroke="#10b981" strokeWidth={3} fillOpacity={1} fill="url(#colorUp)" activeDot={{r: 6, strokeWidth: 0}} />
+                <Area type="monotone" dataKey="cpu" stroke="#3b82f6" strokeWidth={3} fillOpacity={1} fill="url(#colorCpu)" activeDot={{r: 6, strokeWidth: 0}} />
+                <Area type="monotone" dataKey="ram" stroke="#a855f7" strokeWidth={3} fillOpacity={1} fill="url(#colorRam)" activeDot={{r: 6, strokeWidth: 0}} />
               </AreaChart>
             </ResponsiveContainer>
           </div>
@@ -329,26 +315,14 @@ export const Dashboard = () => {
               </div>
             </div>
             
-            <div className="overflow-y-auto flex-1 space-y-2 pr-2 custom-scrollbar">
-              <AnimatePresence initial={false}>
-                {logs.map((log) => (
-                  <motion.div 
-                    key={log.id}
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    className="flex items-start gap-3"
-                  >
-                    <span className="text-slate-500 shrink-0">{log.time}</span>
-                    <span className={`font-bold shrink-0 ${log.method === 'GET' ? 'text-blue-400' : log.method === 'POST' ? 'text-emerald-400' : log.method === 'ERR' ? 'text-rose-500' : 'text-amber-400'}`}>
-                      {log.method.padEnd(4)}
-                    </span>
-                    <span className="text-slate-300 truncate">{log.path}</span>
-                    <span className={`ml-auto shrink-0 ${log.status >= 400 ? 'text-rose-500' : log.status === 202 ? 'text-amber-400' : 'text-emerald-400'}`}>
-                      {log.status}
-                    </span>
-                  </motion.div>
-                ))}
-              </AnimatePresence>
+            <div className="overflow-y-auto flex-1 pr-2 custom-scrollbar">
+                {serverLogs.length > 0 ? serverLogs.map((log, id) => (
+                  <div key={id} className={`mb-1 truncate ${log.includes('INFO') ? 'text-blue-300' : log.includes('ERROR') ? 'text-rose-400' : 'text-slate-300'}`}>
+                    {log}
+                  </div>
+                )) : (
+                  <div className="text-slate-500 italic mt-2">Waiting for logs...</div>
+                )}
             </div>
           </motion.div>
 
