@@ -57,7 +57,7 @@ def metrics():
         "request_count": "todo"
     })
 
-@app.route("/api/deploy", methods=["POST"])
+@app.route("/deploy", methods=["POST"])
 def deploy():
     """Trigger the real GitHub Actions CI/CD Pipeline via GitHub REST API."""
     token = os.getenv("GITHUB_TOKEN")
