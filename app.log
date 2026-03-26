@@ -1479,3 +1479,215 @@
 2026-03-26 19:31:27,128 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
 2026-03-26 19:31:28,072 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:31:28] "GET /metrics HTTP/1.1" 200 -
 2026-03-26 19:31:28,074 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:31:28] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:35:52,145 - __main__ - INFO - Starting Flask app in production mode
+2026-03-26 19:35:52,174 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.102:5000
+2026-03-26 19:35:52,175 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 19:36:20,230 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:20] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:20,232 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:20] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:20,268 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:20] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:20,271 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:20] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:23,222 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:23] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:23,225 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:23] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:26,220 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:26] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:26,222 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:26] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:29,095 - __main__ - INFO - Successfully triggered GitHub Actions deployment pipeline.
+2026-03-26 19:36:29,102 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:29] "POST /deploy HTTP/1.1" 200 -
+2026-03-26 19:36:29,226 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:29] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:29,230 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:29] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:32,214 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:32] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:32,217 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:32] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:35,227 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:35] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:35,232 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:35] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:38,229 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:38] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:38,231 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:38] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:38,656 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:38] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:38,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:38] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:41,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:41] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:41,667 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:41] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:44,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:44] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:44,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:44] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:47,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:47] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:47,658 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:47] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:50,658 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:50] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:50,660 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:50] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:53,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:53] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:53,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:53] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:56,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:56] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:56,655 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:56] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:36:59,652 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:59] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:36:59,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:36:59] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:02,656 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:02] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:02,657 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:02] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:05,661 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:05] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:05,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:05] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:08,660 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:08] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:08,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:08] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:11,658 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:11] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:11,661 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:11] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:14,652 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:14] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:14,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:14] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:17,649 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:17] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:17,651 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:17] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:20,659 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:20] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:20,661 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:20] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:23,657 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:23] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:23,659 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:23] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:26,655 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:26] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:26,657 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:26] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:29,658 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:29] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:29,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:29] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:32,657 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:32] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:32,659 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:32] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:35,651 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:35] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:35,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:35] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:38,655 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:38] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:38,657 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:38] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:44,969 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:44] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:44,971 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:44] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:47,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:47] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:47,666 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:47] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:50,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:50] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:50,666 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:50] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:53,661 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:53] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:53,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:53] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:56,651 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:56] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:56,653 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:56] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:37:59,691 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:59] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:37:59,693 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:37:59] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:02,661 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:02] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:02,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:02] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:05,669 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:05] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:05,670 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:05] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:08,204 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:08] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:08,206 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:08] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:11,209 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:11] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:11,210 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:11] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:14,253 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:14] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:14,264 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:14] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:17,219 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:17] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:17,221 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:17] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:20,202 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:20] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:20,203 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:20] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:23,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:23] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:23,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:23] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:26,666 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:26] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:26,667 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:26] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:29,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:29] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:29,667 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:29] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:32,669 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:32] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:32,671 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:32] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:35,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:35] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:35,668 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:35] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:38,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:38] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:38,655 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:38] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:41,653 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:41] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:41,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:41] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:44,656 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:44] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:44,657 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:44] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:47,669 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:47] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:47,671 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:47] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:50,676 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:50] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:50,680 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:50] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:53,667 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:53] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:53,672 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:53] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:56,657 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:56] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:56,658 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:56] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:38:59,659 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:59] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:38:59,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:38:59] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:39:02,671 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:02] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:39:02,675 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:02] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:39:05,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:05] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:39:05,666 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:05] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:39:08,674 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:08] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:39:08,677 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:08] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:39:11,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:11] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:39:11,666 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:11] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:39:14,651 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:14] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:39:14,652 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:14] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:39:17,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:17] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:39:17,657 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:17] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:39:20,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:20] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:39:20,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:20] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:39:58,675 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:39:58,677 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:39:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:40:58,686 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:40:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:40:58,688 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:40:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:03,419 - __main__ - INFO - Starting Flask app in production mode
+2026-03-26 19:42:03,431 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.102:5000
+2026-03-26 19:42:03,432 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 19:42:04,658 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:04] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:04,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:04] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:06,605 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:06] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:06,605 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:06] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:06,612 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:06] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:06,613 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:06] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:09,616 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:09] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:09,617 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:09] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:12,652 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:12] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:12,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:12] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:15,650 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:15] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:15,658 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:15] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:18,651 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:18] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:18,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:18] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:21,653 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:21] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:21,656 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:21] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:24,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:24] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:24,656 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:24] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:27,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:27] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:27,660 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:27] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:30,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:30] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:30,667 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:30] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:33,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:33] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:33,668 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:33] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:36,659 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:36] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:36,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:36] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:39,657 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:39] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:39,661 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:39] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:42,661 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:42] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:42,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:42] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:45,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:45] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:45,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:45] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:48,662 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:48] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:48,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:48] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:51,651 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:51] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:51,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:51] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:54,655 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:54] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:54,657 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:54] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:42:57,658 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:57] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:42:57,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:42:57] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:43:00,659 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:43:00] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:43:00,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:43:00] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:43:03,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:43:03] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:43:03,655 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:43:03] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:43:06,664 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:43:06] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:43:06,668 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:43:06] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:43:09,667 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:43:09] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:43:09,673 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:43:09] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:43:58,689 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:43:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:43:58,690 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:43:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:44:25,726 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:25] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:44:25,729 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:25] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:44:29,669 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:29] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:44:29,670 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:29] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:44:32,659 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:32] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:44:32,660 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:32] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:44:35,672 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:35] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:44:35,675 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:35] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:44:38,667 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:38] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:44:38,669 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:38] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:44:41,651 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:41] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:44:41,654 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:41] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:44:58,663 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:58] "GET /health HTTP/1.1" 200 -
+2026-03-26 19:44:58,666 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2026 19:44:58] "GET /metrics HTTP/1.1" 200 -
+2026-03-26 19:45:23,269 - __main__ - INFO - Starting Flask app in production mode
+2026-03-26 19:45:23,287 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.102:5000
+2026-03-26 19:45:23,287 - werkzeug - INFO - [33mPress CTRL+C to quit[0m

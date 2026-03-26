@@ -1,7 +1,9 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, g
 from flask_cors import CORS
 import logging
 import os
+import time
+from collections import deque
 import requests
 from dotenv import load_dotenv
 from datetime import datetime
@@ -11,8 +13,27 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app) # Enable CORS for all routes
 
+# Metrics Storage
+START_TIME = time.time()
+request_latencies = deque(maxlen=100)
+total_requests = 0
+
+@app.before_request
+def before_request():
+    g.start_time = time.time()
+    global total_requests
+    total_requests += 1
+
+@app.after_request
+def after_request(response):
+    if hasattr(g, 'start_time'):
+        latency = (time.time() - g.start_time) * 1000  # ms
+        request_latencies.append(latency)
+    return response
+
 # Environment configuration
 app.config['ENV'] = os.getenv('FLASK_ENV', 'production')
+
 app.config['DEBUG'] = os.getenv('FLASK_DEBUG', 'False').lower() == 'true'
 
 # Enhanced logging setup
@@ -50,11 +71,14 @@ def health():
 @app.route("/metrics")
 def metrics():
     logger.debug("Metrics endpoint accessed")
+    uptime_seconds = time.time() - START_TIME
+    avg_latency = sum(request_latencies) / len(request_latencies) if request_latencies else 0
+    
     return jsonify({
         "status": "ok",
-        "uptime": "todo",
-        "memory_usage": "todo",
-        "request_count": "todo"
+        "uptime_seconds": uptime_seconds,
+        "avg_latency_ms": round(avg_latency, 2),
+        "request_count": total_requests
     })
 
 @app.route("/deploy", methods=["POST"])

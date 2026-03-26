@@ -109,11 +109,23 @@ export const Dashboard = () => {
       });
     } catch (err) {
       console.error("Failed to fetch data", err);
+      setHealth({ status: 'Offline', version: '---', service: 'flask-app', timestamp: '' });
       addLog('ERR', '/api/*', 500, 0);
     } finally {
       setLoading(false);
     }
   };
+
+  const formatUptime = (seconds: number) => {
+    if (!seconds) return '0s';
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    const s = Math.floor(seconds % 60);
+    if (h > 0) return `${h}h ${m}m`;
+    if (m > 0) return `${m}m ${s}s`;
+    return `${s}s`;
+  };
+
 
   const simulateLoadSpike = () => {
     addLog('POST', '/api/workload/compute', 202, 345);
@@ -201,12 +213,29 @@ export const Dashboard = () => {
       </motion.header>
 
       {/* Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {[
-          { icon: <ShieldCheck className="text-emerald-400" size={24} />, label: "System Status", value: health?.status || 'Active', sub: `Core v${health?.version || '1.0.0'}`, color: "emerald" },
-          { icon: <Cpu className="text-blue-400" size={24} />, label: "Service Uptime", value: "99.99%", sub: "SLA Compliant", color: "blue" },
-          { icon: <Activity className="text-purple-400" size={24} />, label: "Avg Latency", value: `${history[history.length-1]?.latency || 0}ms`, sub: "p95 optimal", color: "purple" },
-          { icon: <Database className="text-amber-400" size={24} />, label: "Database", value: "Standby", sub: "Connecting...", color: "amber" }
+          { 
+              icon: health?.status === 'Offline' ? <Server className="text-rose-400" size={24} /> : <ShieldCheck className="text-emerald-400" size={24} />, 
+              label: "System Status", 
+              value: health?.status === 'Offline' ? 'Offline' : (health?.status || 'Active'), 
+              sub: `Core v${health?.version || '1.0.0'}`, 
+              color: health?.status === 'Offline' ? 'rose' : 'emerald' 
+          },
+          { 
+              icon: <Cpu className="text-blue-400" size={24} />, 
+              label: "Service Uptime", 
+              value: metrics?.uptime_seconds ? formatUptime(metrics.uptime_seconds) : "0s", 
+              sub: health?.status === 'Offline' ? 'Disconnected' : 'Live Tracking', 
+              color: "blue" 
+          },
+          { 
+              icon: <Activity className="text-purple-400" size={24} />, 
+              label: "Avg Latency", 
+              value: `${metrics?.avg_latency_ms || 0}ms`, 
+              sub: "Based on recent load", 
+              color: "purple" 
+          }
         ].map((stat, i) => (
           <motion.div 
             key={i}
